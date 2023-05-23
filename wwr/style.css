@@ -1,0 +1,58 @@
+
+body {
+    background-color: #fcfbfb;
+}
+header {
+    background-color:rgba(20,30, .7);
+}
+nav a {
+    background-color: grey;
+    color: purple;
+}
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+.home-titles{
+    background-color: rgba(40, 15, .3);
+    color : rgba(70, 90, .7);
+}
+h4 {
+    background-color: aliceblue;
+    color: blanchedalmond;
+}
+.book, .join {
+    background-color: green;
+    color: red;
+}
+.book:hover, .join:hover {
+    background-color: yellow;
+    color: darkblue;
+}
+#background {
+    height:725px
+}
+.msg {
+    background-color: blue;
+    color: white;
+}
+.msg h2 {
+    background-color: blanchedalmond;
+    color: red;
+}
+.msg p {
+    background-color: aquamarine;
+    color: antiquewhite;
+}
+footer {
+    background-color: brown;
+    color: azure;
+}
+footer a {
+    background-color: aqua;
+    color: darkblue;
+}
+footer a:hover {
+    background-color: greenyellow;
+    color: darkgrey;
+}
