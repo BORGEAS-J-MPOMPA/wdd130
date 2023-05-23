@@ -14,14 +14,14 @@ Fonts are separated by a & */
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Nanum Gothic";
-  --paragraph-font: "Nanum Gothic", sans-serif;;
+  --paragraph-font: "Nanum Gothic", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #aabd8c;  /* headlines on a white background */ 
   --headline-color-on-color: #396e94; /* headlines on a colored background */ 
   --paragraph-color-on-white: #a43312; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #381d2a; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #e7c24f  ;
+  --paragraph-background-color: #e7c24f;
   --nav-link-color: #381d2a;
   --nav-background-color: #396e94;
   --nav-hover-link-color: #aabd8c;
@@ -33,8 +33,17 @@ Fonts are separated by a & */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
+/*.html-title {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 2em;
+}
+.msg{
+  background-color:#396e94;
+  line-height: 1.5em;
+}*/
 body {
   max-width: 960px;
+  
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
