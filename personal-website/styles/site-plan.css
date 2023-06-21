@@ -80,6 +80,9 @@ p {
   width: 25%;
   height: 3em;
 }
+.logo {
+  width: 100px;
+}
 
 .primary {
   background-color: var(--primary-color);
