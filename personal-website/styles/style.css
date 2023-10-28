@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+/*https://coolors.co/7d7b1f-b8b42d-697a21-fffce8-cfcbbe-9f9994-3e363f-8e3b3d-dd403a*/
 
-
+/*https://coolors.co/00475b-004e64-007a9a-00a5cf-50d2cd-9fffcb-62d0ad-25a18e-50c388-7ae582*/
+/*https://coolors.co/0a344c-0b3954-0a5c70-087e8b-bfd7ea-df99a5-ff5a5f-c81d25-cd3239*/
+/*https://coolors.co/37143c-3c1642-223d5c-086375-139b93-1dd3b0-66e879-affc41-b6fc52*/
+/*https://coolors.co/353535-395253-3c6e71-6d9395-9eb7b8-ffffff-ececec-8a9ca8-284b63-3c5b71*/
+/*https://coolors.co/05668d-427aa1-97b6ce-ebf2fa-a9c398-679436-86a91b-a5be00*/
+/*https://coolors.co/562c2c-a4402d-f2542d-f49a74-f5dfbb-82baa8-0e9594-108585-127475*/
+/*https://coolors.co/e63946-f1faee-cdeae5-a8dadc-457b9d-386486-31587a-2a4c6e-244163-1d3557*/
+/*https://coolors.co/606c38-445128-283618-93987c-fefae0-eece9f-dda15e-bc6c25*/
+/*https://coolors.co/264653-287271-2a9d8f-8ab17d-e9c46a-efb366-f4a261-ee8959-e76f51*/
+/*https://coolors.co/22577a-2d7d90-38a3a5-48b89f-57cc99-6cdd99-80ed99-a4f3b3-c7f9cc*/
+/*https://coolors.co/e63946-ec9a9a-f1faee-cdeae5-a8dadc-457b9d-31587a-1d3557-324766*/
+/*https://coolors.co/004e64-00a5cf-9fffcb-25a18e-7ae582*/
+/*https://wireframe.cc/UDnbUu*/
 
 div {
     max-width: 1600px;
@@ -10,19 +23,21 @@ div {
     text-align: center;
 }
 body {
-    background-color: #396e94;
+    background-color: #a8dadc;
     font-family: 'Nanum Gothic', 'Brand Gothic', sans-serif;
     font-size: 22px;
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
+    overflow-x: auto;
 }
 h2 {
     margin: 0;
 }
 header {
-    background-color: #aabd8c;
+    background-color: #31587a;
     display: grid;
     grid-template-columns: 150px auto;
+    width: 100%;
 }
 nav {
     display: flex;
@@ -35,6 +50,7 @@ nav {
 }
 .logo {
     width: 80px;
+    border-radius: 50%;
 }
 nav a {
     text-align: center;
@@ -42,22 +58,28 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
-nav a:hover {
-    background-color: #396e94;
-    color: white;
+nav a:hover, .msg:hover {
+    background-color: #a8dadc;
+    color: #31587a;
+    transition: all 0.5s;
+}
+.contact:hover {
+    background-color: #31587a;
+    color:#ec9a9a;
+    transition: color;
 }
 .home-title {
-    color : #a43312;
+    color : #a8dadc;
     font-family: 'Harrington', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
 h4 {
-    color: #e7c24f;
+    color: #a8dadc;
 }
-.book, .join {
-    background-color: #396e94;
-    color: #e7c24f;
+.order, .contact {
+    background-color: #a8dadc;
+    color: #31587a;
     text-decoration: none;
     font-size: 18px;
     padding:15px 30px;
@@ -65,65 +87,113 @@ h4 {
     border-radius: 5px;
 }
 .card-img {
-    border: 10px solid #e7c24f;
+    border: 10px solid #f1faee;
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px #324766;
 }
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
 }
-.rivers-card, .camping-card, .rapids-card {
+.pexels-card, .pexel-card, .clippers-card, .dorco-card {
     margin: 200px 0;
 }
-.book:hover, .join:hover {
-    background-color: #000001;
-    color: white;
+.order:hover, .conctact:hover {
+    background-color: #457b9d;
+    color: #f1faee;
 }
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    width: 300px;
 }
-.card-img, .mountains {
-    width: 100%;
+.card-img, .lotion {
+    width: 300px;
 }
-.rivers-card {
-    grid-column: 2/4;
-    grid-row: 2/3;
+.powder {
+    width: 300px;
+    grid-column: 1fr;
+    grid-row: 2;
 }
-.camping-card {
-    grid-column: 5/7;
-    grid-row: 2/3;
+.pexels-card {
+    grid-column: 1fr;
+    grid-row: 0;
 }
-.rapids-card {
-    grid-column: 8/10;
-    grid-row: 2/3;
+.pexel-card {
+    grid-column: 1fr;
+    grid-row: 0;
+}
+.clippers-card {
+    grid-column: 1fr;
+    grid-row: 0;
 }
 #background {
     height:725px;
-    grid-column: 1/11;
-    grid-row: 4/9;
+    /*grid-column: 1/11;
+    grid-row: 4/9;*/
 }
-.mountains {
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #aabd8c;
+.borgeas-icon{
+    width: 100px;
+    border: 10px #f1faee solid;
+    border-radius: 50%;
+    grid-column: 1fr;
+    grid-row: 2;
+}
+.lotion {
+    grid-column: 2fr;
+    grid-row: 2;
+    box-shadow: 5px 5px 10px #f1faee;
 }
 .msg {
-    background-color: #396e94;
+    background-color: #cdeae5;
     line-height: 1.5em;
     padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #aabd8c;
+    grid-column: 1fr;
+    grid-row: 4;
+    position: relative;
+    right: -200px;
+    box-shadow: 5px 5px 10px #31587a;
 }
 .msg h2 {
-    color: #e7c24f;
+    color: #1d3557;
 }
 .msg p {
-    color: #e7c24f;
+    color: #457b9d;
     font-size: .8em;
     padding-bottom:15px;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1fr 1fr 1fr;
+}
+.pexels-card {
+    width: 300px;
+    grid-column: 1fr;
+    grid-row: 1;
+    position: relative;
+    right: 0;
+}
+.pexel-card {
+    width: 300px;
+    grid-column: 1fr;
+    position: relative;
+    left: 0;
+    grid-row: 1;
+}
+.clippers-card {
+    width: 300px;
+    grid-column: 1fr;
+    position: relative;
+    left: 0;
+    grid-row: 1;
+}
+.dorco-card {
+    width: 150px;
+    grid-column: 2fr;
+    grid-row: 2;
+    position: relative;
+    top: -300px;
+    right: -100px;
 }
 #hero {
     display: grid;
@@ -159,26 +229,43 @@ main section img {
     padding-top:10px;
 }
 footer {
-    background-color: #aabd8c;
-    color: #000001;
-    padding: 25px 50px;
+    background-color: #31587a;
+    color: #cdeae5;
+    /*padding: 25px 50px;*/
     margin-top: 200px;
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
-    align-items: center;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+footer .location-card img {
+    width: 70px;
+    position: relative;
 }
 footer .social-medias img {
-    padding-top: 15px;
+    width: 60px;
+    display: inline-block;
+    padding-top: 10px;
+    position: relative;
+    margin: 7px;
+    
 }
 footer a {
-    color: #a43312;
+    color: #ec9a9a;
     text-decoration: none;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    margin: 0;
 }
 footer a:hover {
-    color: #000001;
+    color: #e63946;
 }
 footer p {
     font-size: 1.2em;
+    right: 100px;
 }
 footer p a:hover {
     text-decoration: underline;
@@ -207,21 +294,23 @@ footer p a:hover {
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
+        color: #ec9a9a;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .pexels-card, .pexel-card, .clippers-card { 
         margin: 50px auto;
         width: 60%;
     }
     #background {
         display: none;
     }
-    .mountains, .msg {
+    .pexels-card, .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
     }
     footer {
         margin-top: 25px;
+        width: 100%;
+        display: inline-block;
     }
 }

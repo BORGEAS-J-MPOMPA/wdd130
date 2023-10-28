@@ -3,27 +3,49 @@ Any spaces in your font name should be replaced with a +.
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
+/*https://coolors.co/7d7b1f-b8b42d-697a21-fffce8-cfcbbe-9f9994-3e363f-8e3b3d-dd403a*/
+
+/*https://coolors.co/00475b-004e64-007a9a-00a5cf-50d2cd-9fffcb-62d0ad-25a18e-50c388-7ae582*/
+/*https://coolors.co/0a344c-0b3954-0a5c70-087e8b-bfd7ea-df99a5-ff5a5f-c81d25-cd3239*/
+/*https://coolors.co/37143c-3c1642-223d5c-086375-139b93-1dd3b0-66e879-affc41-b6fc52*/
+/*https://coolors.co/353535-395253-3c6e71-6d9395-9eb7b8-ffffff-ececec-8a9ca8-284b63-3c5b71*/
+/*https://coolors.co/05668d-427aa1-97b6ce-ebf2fa-a9c398-679436-86a91b-a5be00*/
+/*https://coolors.co/562c2c-a4402d-f2542d-f49a74-f5dfbb-82baa8-0e9594-108585-127475*/
+/*https://coolors.co/e63946-f1faee-cdeae5-a8dadc-457b9d-386486-31587a-2a4c6e-244163-1d3557*/
+/*https://coolors.co/606c38-445128-283618-93987c-fefae0-eece9f-dda15e-bc6c25*/
+/*https://coolors.co/264653-287271-2a9d8f-8ab17d-e9c46a-efb366-f4a261-ee8959-e76f51*/
+/*https://coolors.co/22577a-2d7d90-38a3a5-48b89f-57cc99-6cdd99-80ed99-a4f3b3-c7f9cc*/
+/*https://coolors.co/e63946-ec9a9a-f1faee-cdeae5-a8dadc-457b9d-31587a-1d3557-324766*/
+/*https://coolors.co/004e64-00a5cf-9fffcb-25a18e-7ae582*/
+/*https://wireframe.cc/UDnbUu*/
+
 :root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
-  --accent2-color: white;
+  /* change the values below to your colors from your palette: coolors.co/05668d-427aa1-
+  97b6ce-ebf2fa-a9c398-679436-86a91b-a5be00 */
+  --primary-color: #31587a   ;
+  --secondary-color: #f1faee;
+  --accent1-color:#ec9a9a;
+  --accent2-color: #a8dadc;
+  ---adc: #0a344c #0b3954 #0a5c70 #087e8b #bfd7ea #df99a5 #ff5a5f #c81d25 #cd3239;
+  ---adc: #00475b #004e64 #007a9a #00a5cf #50d2cd #9fffcb #62d0ad #25a18e #50c388 #7ae582;
+  ---adc: #004e64 #00a5cf #9fffcb #25a18e #7ae582;
+  ---klabidel: #e63946 #ec9a9a #f1faee #cdeae5 #a8dadc #457b9d #31587a #1d3557 #324766 ;
+
 
   /* change the values below to your chosen font(s) */
   --heading-font: "IM Fell French Canon SC";
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #31587a;  /* headlines on a white background */ 
+  --headline-color-on-color: #e63946; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #e63946; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #1d3557; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #a8dadc  ;
+  --nav-link-color: #324766;
+  --nav-background-color: #a8dadc;
+  --nav-hover-link-color: #324766;
+  --nav-hover-background-color: #e63946;
 }
 
 
@@ -80,8 +102,14 @@ p {
   width: 25%;
   height: 3em;
 }
-.logo {
-  width: 100px;
+#logo_link img {
+  width: 250px;
+  border-radius: 50%;
+}
+main img {
+  width: 200px;
+  height:200px;
+  display: inline-block;
 }
 
 .primary {
