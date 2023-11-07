@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+nav ul li:first-child {
+    display: block;
+    font-size: 2rem;
+}
+
+nav ul li:first-child a {
+    padding: 1px 10px;
+}
+
+nav ul li {
+    display: none;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #efefef;
+    color: black;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Class Selectors */
+.active {
+    border-bottom: 1px solid yellow;
+}
+
+.open li {
+    display: block;
+}
+
+.block {
+    display: block;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+    margin: 1rem 0 .5rem;
+}
+
+h1 {
+    border-bottom: 1px solid #ccc;
+}
+
+#gridly h1 {
+    margin-top: 80px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+header {
+    margin-top: 70px;
+}
+
+picture {
+    margin: 0 auto;
+}
+
+picture img {
+    width: 240px;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #777;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+}
+
+article {
+    margin-bottom: 1rem;
+}
+
+article div {
+    margin-bottom: .5rem;
+    text-align: right;
+}
+
+label {
+    padding: .35rem;
+}
+
+input {
+    padding: .35rem;
+}
+
+input[type="button"] {
+    padding: .5rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dt::before {
+    content: "🏘️ ";
+}
+
+dd {
+    margin: 0 0 .5rem 2rem;
+    font-size: smaller;
+}
+
+
+h1 {
+    color: #333;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button#add {
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+ul#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+li.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+button.remove {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    section {
+        min-width: 300px;
+    }
+
+    #home {
+        margin: 100px auto 20px;
+        grid-template-columns: 250px 1fr;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+    }
+
+    #task3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin: 0 auto;
+        max-width: 950px;
+    }
+
+}

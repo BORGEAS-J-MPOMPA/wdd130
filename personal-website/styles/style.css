@@ -231,27 +231,82 @@ main section img {
 footer {
     background-color: #31587a;
     color: #cdeae5;
-    /*padding: 25px 50px;*/
-    margin-top: 200px;
-    display: inline-block;
-    justify-content: space-around;
-    width: 100%;
-    bottom: 0;
-    position: relative;
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    /*width: 100%*/
+    /*bottom: 0;
+    position: relative;*/
 }
 
 footer .location-card img {
     width: 70px;
-    position: relative;
+    position: absolute;
+    text-align: right;
+    display: inline;
+    align-items: flex-end;
 }
-footer .social-medias img {
+
+footer .location-card h3 {
+    position: left bottom;
+    text-align: left;
+    align-items: flex-end;
+}
+
+.social-media-icons {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: flex-end; /* Align content to the bottom */
+    text-align: left;
+}
+
+.social-media-icons a {
+    text-decoration: none; /* Remove underlines from the links */
+    color: #fff; /* Set the icon color to white */
+    margin-right: 10px; /* Add spacing between social media icons */
+}
+
+.social-media-icons img {
+    width: 30px; /* Set the width of the social media icons */
+    height: 30px; /* Set the height of the social media icons */
+}
+
+
+footer a {
+    color: #ec9a9a;
+    text-decoration: none;
+    width: auto;
+    text-align: center;
+    display: flex;
+    position:relative;
+    margin: 0;
+}
+footer a:hover {
+    color: #e63946;
+}
+footer p {
+    font-size: 1.2em;
+    right: 100px;
+    text-align: right;
+    display:flex;
+    position: absolute;
+    margin: 0;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+
+
+/*footer .social-medias img {
     width: 60px;
     display: inline-block;
-    padding-top: 10px;
-    position: relative;
-    margin: 7px;
-    
+    padding-top: 0;
+    position: horizontal;
+    bottom:0;
+    left: 0;
+    margin: 7px; 
 }
+
 footer a {
     color: #ec9a9a;
     text-decoration: none;
@@ -313,4 +368,4 @@ footer p a:hover {
         width: 100%;
         display: inline-block;
     }
-}
+}*/

@@ -2,3 +2,33 @@
     width: 100%;
     height: 300px;
 }
+
+header {
+    background-color: #31587a;
+    display: grid;
+    grid-template-columns: 150px auto;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}    
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+    border-radius: 50%;
+}
+nav a {
+    text-align: center;
+    color: #000001;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover, .msg:hover {
+    background-color: #a8dadc;
+    color: #31587a;
+    transition: all 0.5s;
