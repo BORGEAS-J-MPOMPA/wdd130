@@ -64,7 +64,7 @@ img {
   max-width: 300px;
 }
 
-h2 {
+h1, h2, h3 {
   text-align: center;
 }
 hr {
@@ -105,6 +105,6 @@ p {
     background-color: var(--accent2-color);
   }
   p.colored {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
+    background-color: var(--nav-background-color);
+    color: none;
   }
