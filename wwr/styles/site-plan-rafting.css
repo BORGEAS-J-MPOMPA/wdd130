@@ -1,25 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
 
+      /*https://coolors.co/6b2737-e08e45-f8f4a6-bdf7b7-3943b7
+        https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c*/
+
 
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    background: var(--accent1-color);
 }
 
 :root {
-    --primary-color: #396e94;
-    --secondary-color: #e7c24f;
-    --accent1-color: #a43312;
-    --accent2-color: #381d2a;
+    --primary-color: #011627;
+    --secondary-color: #41ead4;
+    --accent1-color: #fdfffc;
+    --accent2-color: #ff9f1c;
 
     --heading-font: 'Segoe UI', serif;
     --paragraph-font: 'Segoe UI', serif;
 
-    --nav-background-color: #396e94;
-    --nav-link-color: #a43312;
-    --nav-hover-link-color: #381d2a;
-    --nav-hover-background-color: #e7c24f;
+    --nav-background-color: #011627;
+    --nav-link-color: #fdfffc;
+    --nav-hover-link-color: #41ead4;
+    --nav-hover-background-color: #ff9f1c;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,6 +59,10 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+header div {
+  text-align: center;
 }
 
 
@@ -106,5 +114,9 @@ p {
   }
   p.colored {
     background-color: var(--nav-background-color);
-    color: none;
+    color: var(--nav-hover-link-color);
+  }
+
+  footer p {
+    text-align: center; 
   }
