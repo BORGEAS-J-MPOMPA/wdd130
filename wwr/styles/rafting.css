@@ -59,7 +59,6 @@ h1 {
     margin: 0;
     background-color: var(--nav-background-color);
     opacity: 0.7;
-    fill-opacity: 0;
 }
 
 article img {
@@ -84,7 +83,6 @@ header nav a {
 header nav a:hover {
     text-transform: uppercase;
     border: 2px solid var(--nav-hover-background-color);
-    box-shadow: var(--accent3-color);
     color: var(--nav-hover-background-color);
     transition-property: height, width;
     transition-duration: 1s, 500ms;
