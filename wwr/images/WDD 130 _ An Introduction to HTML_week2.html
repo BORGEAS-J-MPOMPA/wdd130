@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://byui-cse.github.io/wdd130-ww-course/week02/prepare-css-introduction.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | An Introduction to HTML</title>
+  <link rel="shortcut icon" href="https://byui-cse.github.io/wdd130-ww-course/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./WDD 130 _ An Introduction to HTML_week2_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./WDD 130 _ An Introduction to HTML_week2_files/course.css">
+  <link rel="stylesheet" href="./WDD 130 _ An Introduction to HTML_week2_files/ir-black.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+      <img src="./WDD 130 _ An Introduction to HTML_week2_files/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/">Home</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week01/">W1</a></span>
+      <span class="active"><a href="https://byui-cse.github.io/wdd130-ww-course/week02/">W2</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week03/">W3</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week04/">W4</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week05/">W5</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week06/">W6</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week07/">W7</a></span>
+      <span><a href="https://byui.instructure.com/calendar/" target="_blank">I-Learn</a></span>
+    </nav>
+    <h2>An Introduction to CSS</h2>
+    <h3>Overview</h3>
+    <p>CSS (Cascading Style Sheets) is a ruleset language that defines the style and presentation of
+      an HTML document. CSS is made up of rules that select elements from the document and that
+      contain style declarations. An HTML document can have zero to many CSS references.</p>
+    <div class="callout info">"Like HTML, CSS is not a programming language. It's not a markup
+      language either. CSS is a style sheet language. CSS is what you use to selectively style HTML
+      elements ... CSS is used to style and layout web pages — for example, to alter the font,
+      color, size, and spacing of your content, split it into multiple columns, or add animations
+      and other decorative features." - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN</a>
+    </div>
+
+    <h3>Prepare</h3>
+
+    <ul>
+
+      <li>Read: 📄 <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank" rel="noopener">CSS Basics</a> - MDN</li>
+
+      <li>Watch: 🎦 <a href="https://youtu.be/CDQobxknrlE" target="_blank">What is
+          CSS?</a> | (4:07 mins, <a href="https://byui-wdd.github.io/wdd130/text/what_is_css.pdf" target="_blank" rel="noopener">Transcript </a>)
+      </li>
+
+
+    </ul>
+    <h3>Activity Instructions</h3>
+    <p>In this activity we will add a little style to your course home page.</p>
+    <div class="callout info">
+      Currently your home page (index.html) has default styling applied by the browser that renders
+      the page. For example the &lt;h1&gt; element is styled as larger and bolder. If we want to add
+      our own styles to this page we will use an external CSS file that will link up to the HTML
+      page. This will allow us to keep our HTML and CSS separate and organized.
+    </div>
+    <h4 class="step">Create CSS Folder and File</h4>
+    <ol>
+      <li>In VS Code, with your wdd130 folder open, create a new folder on the wdd130 root directory
+        named "<strong>styles</strong>".
+        <figure><img src="./WDD 130 _ An Introduction to HTML_week2_files/w02-adding-css2.png" alt="Add New Folder Button in VS Code">
+          <figcaption>Figure 1: Add new folder button in VS Code explorer panel</figcaption>
+        </figure>
+      </li>
+      <li>In the new styles folder, add a new file named <strong>styles.css</strong>
+        <figure><img src="./WDD 130 _ An Introduction to HTML_week2_files/w02-adding-css3.png" alt="Add New File Button in VS Code">
+          <figcaption>Figure 2: Add new file button in VS Code explorer panel</figcaption>
+        </figure>
+        Your site folder structure should look like this:
+        <figure><img src="./WDD 130 _ An Introduction to HTML_week2_files/styles-folder-structure.png" alt="WDD 130 Site Folder and File Structure">
+          <figcaption>Figure 3: Folder structure example</figcaption>
+        </figure>
+      </li>
+    </ol>
+    <h4 class="step">Write some CSS</h4>
+    <ol>
+      <li>Open the styles.css file and add the following CSS rules.
+        <pre><code class="css hljs language-css"><span class="hljs-selector-tag">nav</span> {
+  <span class="hljs-attribute">background-color</span>: steelblue;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+}</code></pre>
+        <details class="smaller">
+          <summary>What is this?</summary>
+          <p>This CSS rule names the &lt;nav&gt; element as the selected element to apply two style
+            declarations.</p>
+          <ol>
+            <li>The background color will be the color "steelblue", which is a valid, named color.
+            </li>
+            <li>Padding, or area between the content and border is set to 10 pixels for readability.
+            </li>
+          </ol>
+        </details>
+
+        <pre><code class="css hljs language-css"><span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+}</code></pre>
+        <details class="smaller">
+          <summary>What is this?</summary>
+          <p>This CSS rule names all the &lt;a&gt; elements that are children of the &lt;nav&gt;
+            element and applies the following declarations:</p>
+          <ol>
+            <li>The foreground or font color will be white.</li>
+            <li>The display will change from the default of inline to block.</li>
+            <li>Each anchor tag will have padding of 20px;</li>
+          </ol>
+        </details>
+
+        <pre><code class="css hljs language-css"><span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">color</span>: steelblue;
+}</code></pre>
+        <details class="smaller">
+          <summary>What is this?</summary>
+          <p>This CSS rule references the &lt;h1&gt; element as the selected element and applies the
+            following declaration:</p>
+          <ol>
+            <li>The foreground, font color is set to steelblue.</li>
+          </ol>
+        </details>
+
+        <pre><code class="css hljs language-css"><span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">150px</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid steelblue;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">2px</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">30px</span> gray;
+}</code></pre>
+        <details class="smaller">
+          <summary>What is this?</summary>
+          <p>This CSS rule references all the &lt;img&gt; elements as the selector and applies the
+            following declarations:</p>
+          <ol>
+            <li>a set width with a height that will adjust dynamically to fit the image's aspect
+              ratio.</li>
+            <li>A border shortcut that names the width, type of border, and color of the border.
+            </li>
+            <li>Padding between the image and the border.</li>
+            <li>A box shadow around the image border with zero offset and depth of 30px in gray.
+            </li>
+          </ol>
+        </details>
+
+        <pre><code class="css hljs language-css"><span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+}</code></pre>
+        <details class="smaller">
+          <summary>What is this?</summary>
+          <p>This CSS rule names all &lt;p&gt; elements as the selector and applies the following
+            declaration:</p>
+          <ol>
+            <li>Padding between the paragraph content and the border is set to 10 pixels.</li>
+          </ol>
+        </details>
+      </li>
+      <li>Be sure to save your styles.css changes.</li>
+    </ol>
+    <figure style="float:right; margin: 0 0 10px 10px;"><img src="./WDD 130 _ An Introduction to HTML_week2_files/intro-to-css-home.png" alt="Example screenshot of home page with CSS" loading="lazy" width="300">
+      <figcaption>Figure 4: Example screenshot of home page with CSS</figcaption>
+    </figure>
+    <h4 class="step">Link the CSS file to the HTML page</h4>
+    <ol>
+      <li>Open the <strong>index.html</strong> file and add the following line in the
+        <code>&lt;head&gt;</code> section of the HTML document.
+        <pre>        <code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"styles/styles.css"</span>&gt;</span></code>
+        </pre>
+
+      </li>
+      <li>Test the application of the style to your homepage by using <strong>Live Server</strong>.
+        Right mouse click on the file name in the Explorer Panel in VS Code and select <strong>Open
+          Live Server</strong>.</li>
+      <li>Make corrections if needed.</li>
+    </ol>
+
+    <div class="callout info">
+      🎦 Watch: <a href="https://video.byui.edu/media/t/1_axrugcro" target="_blank">Activity
+        Walkthrough Demonstration</a>
+    </div>
+    <h3>Submission</h3>
+    <ol>
+      <li>Be sure to Commit and Push your changes to your wdd130 GitHub Pages site.</li>
+    </ol>
+
+    <div class="callout info">
+      <h4>📑 Reference: Getting Started with the Web</h4>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">CSS basics</a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+  <footer>
+    <p>Copyright © Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+  <script src="./WDD 130 _ An Introduction to HTML_week2_files/highlight.min.js.download"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="./WDD 130 _ An Introduction to HTML_week2_files/prevent-code-select.js.download"></script>
+
+
+</body></html>

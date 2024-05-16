@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0;
+    background: var(--accent1-color);
+    align-content: center;
+}
+
+:root {
+    --primary-color: #011627;
+    --secondary-color: #41ead4;
+    --accent1-color: #fdfffc;
+    --accent2-color: #ff9f1c;
+    --accent3-color: #f71735;
+
+    --heading-font: 'Segoe UI', serif;
+    --paragraph-font: 'Segoe UI', serif;
+
+    --nav-background-color: #011627;
+    --nav-link-color: #fdfffc;
+    --nav-hover-link-color: #41ead4;
+    --nav-hover-background-color: #ff9f1c;
+}
+
+div {
+    position: relative;
+}
+.hero main img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, article {
+    position: absolute;
+}
+article {
+    width: 800px;
+    height: auto;
+    display: inline-block !important;
+    left: -100px;
+    padding: 10px;
+    margin: 200px;
+    top: 10px;
+    background-color: var(--nav-hover-link-color);
+    color: var(--accent3-color);
+    opacity: 0.7;;
+}
+
+h1 {
+    width: 100%;
+    top: 30px;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    background-color: var(--nav-background-color);
+    opacity: 0.7;
+    fill-opacity: 0;
+}
+
+article img {
+    width: 300px;
+    height: auto;
+    float: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--nav-background-color);
+    transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -webkit-transition: all 700ms ease-in-out;
+    animation: 3s ease-in 1s 2 reverse both paused;
+    animation: 3s linear 1s slidein;
+}
+header nav a:hover {
+    text-transform: uppercase;
+    border: 2px solid var(--nav-hover-background-color);
+    box-shadow: var(--accent3-color);
+    color: var(--nav-hover-background-color);
+    transition-property: height, width;
+    transition-duration: 1s, 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0s, 1s;
+    background: var(--nav-hover-link-color);
+    transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -webkit-transition: all 700ms ease-in-out;
+    animation: 3s ease-in 1s 2 reverse both paused;
+    animation: 3s linear 1s slidein;   
+}
+
+.sociallinks img {
+    display: inline-flex;
+    width: 50px;
+    height: auto;
+}
+
+
+nav.sociallinks a {
+    text-decoration: none;
+}
+
