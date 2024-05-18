@@ -3,11 +3,9 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-    margin: 0;
+    max-width: 1024px;
     background: var(--accent1-color);
-    align-content: center;
+    align-items: center;
 }
 
 :root {
@@ -34,21 +32,25 @@ div {
     width: 100%;
     height: auto;
 }
+.hero {
+    width: 100%;
+}
 
 h1, article {
     position: absolute;
 }
 article {
-    width: 800px;
+    width: 75%;
     height: auto;
-    display: inline-block !important;
+    display: flex;
+    flex-direction: row-reverse;
     left: -100px;
     padding: 10px;
     margin: 200px;
     top: 10px;
     background-color: var(--nav-hover-link-color);
-    color: var(--accent3-color);
-    opacity: 0.7;;
+    color: var(--primary-color);
+    opacity: 0.7;
 }
 
 h1 {
@@ -70,7 +72,32 @@ article img {
 h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
 }
+header {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+header img {
+    width: 200px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+header nav {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header nav a {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    border: solid 3px var(--nav-background-color);
     text-decoration: none;
     color: var(--nav-background-color);
     transition: all 700ms ease-in-out;
@@ -95,14 +122,106 @@ header nav a:hover {
     animation: 3s linear 1s slidein;   
 }
 
-.sociallinks img {
-    display: inline-flex;
-    width: 50px;
+
+/*SECTION ONE MODIFICATIONS*/
+
+
+section.history {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.my_way {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history img {
+    width: 200px;
     height: auto;
+    order: 1;
+}
+.lorem {
+    order: 2;
+}
+
+.paragraph {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
-nav.sociallinks a {
-    text-decoration: none;
+/*SECTION TWO MODIFICATIONS*/
+
+.adventure {
+    padding: 20px;
+}
+.my_way_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.adventure .images {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.adventure .images .position_1,
+.adventure .images .position_2,
+.adventure .images .position_3,
+.adventure .images .position_4,
+.adventure .images .position_5 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 18%;
+}
+
+
+
+.adventure .images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+footer {
+    background-color: var(--nav-hover-link-color);
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+footer img {
+    width: 50px;
+}
+
+footer .sociallinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+
+footer .borgeas {
+    flex: 1 0 100%;
+    margin-bottom: 10px;
+}
