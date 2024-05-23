@@ -31,7 +31,7 @@ div {
     display: block;
     width: 100%;
     height: auto;
-    padding: 10px 20px;
+    padding: 0 10px 0 10px;
     margin: 10px;
 }
 .hero {
@@ -60,7 +60,7 @@ h1 {
     width: 100%;
     top: 30px;
     text-align: center;
-    padding: 30px;
+    padding: 30px 10px 30px 10px;
     background-color: var(--nav-background-color);
     opacity: 0.7;
 }
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6, .text {
 header {
     width: 100%;
     height: 110px;
-    padding: 10px 20px;
+    padding: 0px 10px 0 10px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     background-color: var(--nav-hover-link-color);
@@ -210,9 +210,10 @@ section.history {
 
 
 footer {
+    width: 100%;
     height: 100px;
     background-color: var(--nav-hover-link-color);
-    padding: 10px 20px;
+    padding: 0 10px 0 10px;
     display: flex;
     text-align: center;
     justify-content: flex-end;
