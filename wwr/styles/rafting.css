@@ -246,4 +246,5 @@ footer .borgeas {
     flex-direction: row;
     left: -100px;
     position: relative;
+    flex-shrink: 5;
 }
