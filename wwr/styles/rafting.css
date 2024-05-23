@@ -44,6 +44,7 @@ article {
     height: auto;
     display: flex;
     flex-direction: row-reverse;
+    flex-shrink: 10;
     left: -100px;
     padding: 10px;
     margin: 200px;
@@ -58,31 +59,36 @@ h1 {
     top: 30px;
     text-align: center;
     padding: 30px;
-    margin: 0;
     background-color: var(--nav-background-color);
     opacity: 0.7;
 }
 
 article img {
-    width: 300px;
-    height: auto;
+    width: 18%;
+    height: 150px;
     float: right;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .text {
     color: var(--secondary-color);
 }
 header {
     width: 100%;
-    height: auto;
+    height: 110px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    background-color: var(--nav-hover-link-color);
 }
 
 header img {
-    width: 200px;
+    position: relative;
+    width: 110px;
     grid-column-start: 2;
     grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+    flex-shrink: 20;
+
 }
 
 header nav {
@@ -91,13 +97,14 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 5;
 }
 
 header nav a {
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    border: solid 3px var(--nav-background-color);
+    border: solid 1px var(--nav-background-color);
     text-decoration: none;
     color: var(--nav-background-color);
     transition: all 700ms ease-in-out;
@@ -130,18 +137,21 @@ section.history {
     display: flex;
     flex-direction: column;
     position: relative;
+    flex-shrink: 10;
 }
 .my_way {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-shrink: 10;
 }
 
 .history img {
-    width: 200px;
-    height: auto;
+    position: relative;
+    top: 20px;
+    height: 200px;
     order: 1;
 }
 .lorem {
@@ -152,6 +162,7 @@ section.history {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-shrink: 10;
 }
 
 
@@ -166,29 +177,29 @@ section.history {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-shrink: 10;
 }
-
-.adventure .images {
+.images {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
 }
-.adventure .images .position_1,
-.adventure .images .position_2,
-.adventure .images .position_3,
-.adventure .images .position_4,
-.adventure .images .position_5 {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 18%;
+
+.images img {
+    width: 16%;
+    height: 150px;
+    flex-shrink: 10;
 }
 
-
-
-.adventure .images img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+    justify-items: center;
+    column-gap: 0;
+    flex-shrink: 10;
 }
 
 
@@ -196,6 +207,7 @@ section.history {
 
 
 footer {
+    height: 80px;
     background-color: var(--nav-hover-link-color);
     padding: 20px;
     display: flex;
@@ -222,6 +234,12 @@ footer .sociallinks {
 
 
 footer .borgeas {
-    flex: 1 0 100%;
+    display: inline-flex;
     margin-bottom: 10px;
+    align-self: center;
+    justify-self: center;
+    align-content: flex-start;
+    flex-direction: row;
+    left: -100px;
+    position: relative;
 }
