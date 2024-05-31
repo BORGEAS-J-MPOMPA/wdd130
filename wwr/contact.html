@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="This is the Contact Us webpage to keep in touch with 
+    and get personal information from users.">
+    <meta name="author" content="BORGEAS JULFERIQUE MPOMPA">
+</head>
+<body>
+    <header>
+        <img src="images/Rapids_logo2.jpg" alt="Rapid Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="contact_us">
+        <div class="hero">
+            <img src="images/rafting12_1024.jpg" alt="Hero Image">
+            <h1>WHITE WATER RAFTING</h1>
+        </div>
+        <section>
+            <h1 class="contact">CONCTACT US</h1>
+                <p>Address: 123 Rafting Lane, Rapids City, RC 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@w05rafting.com</p>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5626.734795201016!2d15.250868094589961!3d-4.277953320244719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scg!4v1717021954618!5m2!1sfr!2scg" 
+                width="300" height="350" style="border:3px solid var(--nav-hover-link-color);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <div class="team">
+            <h2>Meet Our Team</h2>
+            <div class="photo">
+                <img src="images/Ludovic.jpg" alt="Manager">
+                <img src="images/JulFe3+.jpg" alt="Manager">
+                <img src="images/Noe.jpg" alt="Manager">
+            </div>
+        </div>
+            <div class="employee">
+                <p>CEO: LUDOVIC BARON</p>
+                <p>Manager: BORGEAS J MPOMPA</p>
+                <p>Secretary: NOE MOUDOUDOU</p>
+
+            </div>
+
+        <form action="/action_page.php" method="post">
+            <h2>Here's the Form, please fill the fields.</h2>
+            <div>
+                <div class="input-question">
+                    <label for="firstname">Enter your Firstname</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                    <label for="lastname">Enter your Lastname</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                    <label for="email">Enter your Email Address</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phone-number">Enter your Phone Number</label>
+                    <input type="tel" name="phone-number" id="phone-number" required>
+                    <label for="physical-address">Enter your Physical Address</label>
+                    <input type="text" name="physical-address" id="physical-address" required>
+                </div>
+                
+                <h4>Choose your Gender</h4>
+                <div class="gender-radio">
+                    <label for="gender-male">
+                    <input type="radio" id="gender-male" name="gender" value="male" required>
+                        Male
+                    </label><br>
+                    <label for="gender-female">
+                        <input type="radio" id="gender-female" name="gender" value="female" required>
+                        Female
+                    </label><br>
+                    <label for="gender-other">
+                        <input type="radio" id="gender-other" name="gender" value="other" required>
+                        Other
+                    </label><br>
+                </div>
+                <h4>What is your inquiry about?</h4>
+                <div class="inquiry-radio">
+                    <input type="radio" name="Radio selection">General Inquiry
+                    <input type="radio" name="Radio selection">Reservation Question
+                    <input type="radio" name="Radio selection">Website Suggestion
+                </div>
+                <div class="msg">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" name="msg" rows="5" cols="10" required></textarea>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox" name="Checkbox">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>         
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="borgeas">&copy; 2024 &#127796; White Water Rafting &#127796; BORGEAS JULFERIQUE MPOMPA</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/Colored_Facebook3_svg-512.webp" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/1_Twitter3_colored_svg-512.webp" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/icon-04-512.webp" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Quiz Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <form action="/action_page.php" method="post">
+        <hr>
+        <h1><i class="fa fa-check-square-o"></i>Quiz Form About Technology Languages</h1>
+        <hr>
+        <div>
+            <label for="q1"><strong>1.</strong>What is the best way to learn to code?</label>
+            <input type="text" name="q1" id="q1" required>
+        </div>
+        
+        <div>
+            <label for="q2"><strong>2.</strong>What are <strong>Front-End</strong> languages?</label>
+            <select id="q2" name="q2" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="front end technologies 1">
+                    Sass (Syntactically Awesome Stylesheets),
+                    LESS (Leaner Style Sheets).
+                </option>
+                <option value=" front-end">
+                    HTML (HyperText Markup Language),
+                    CSS (Cascading Style Sheets),
+                    JavaScript,
+                    TypeScript.
+                </option>
+                <option value="front end technologies 2">
+                    Frameworks/Libraries:
+                    React.js,
+                    Angular,
+                    Vue.js,
+                    Svelte.
+                </option>
+                <option value="markup languages">
+                    Markup Languages: XML, SVG (Scalable Vector Graphics).
+                </option>
+                <option value="back-end languages">
+                    JavaScript (with Node.js),
+                    Python,
+                    Ruby,
+                    PHP,
+                    Java,
+                    C#,
+                    Go,
+                    Rust,
+                    Kotlin,
+                    Scala.
+                </option>
+            </select>
+        </div>
+        <div>
+            <label for="q3"><strong>3.</strong>What are <strong>Back-End</strong> languages?</label>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="front end technologies 1">
+                    Sass (Syntactically Awesome Stylesheets),
+                    LESS (Leaner Style Sheets).
+                </option>
+                <option value=" front-end">
+                    HTML (HyperText Markup Language),
+                    CSS (Cascading Style Sheets),
+                    JavaScript,
+                    TypeScript.
+                </option>
+                <option value="front end technologies 2">
+                    Frameworks/Libraries:
+                    React.js,
+                    Angular,
+                    Vue.js,
+                    Svelte.
+                </option>
+                <option value="markup languages">
+                    Markup Languages: XML, SVG (Scalable Vector Graphics).
+                </option>
+                <option value="back-end languages">
+                    JavaScript (with Node.js),
+                    Python,
+                    Ruby,
+                    PHP,
+                    Java,
+                    C#,
+                    Go,
+                    Rust,
+                    Kotlin,
+                    Scala.
+                </option>
+            </select>
+        </div>
+        <div>
+            <label for="q4"><strong>4.</strong>What is the difference between the concepts <strong>Front-End</strong> and <strong>Back-End</strong> languages?</label>
+            <textarea name="q4" id="q4" rows="3" cols="30" required></textarea>
+        </div>
+        <div>
+            <label for="q5"><strong>5.</strong>What is the bottom margin given this declaration?</label>
+            <pre>margin: 10px 5px 15px 20px;</pre>
+            <input type="number" id="q5" name="q5" min="0" max="20" required>
+        </div>
+        <hr>
+        <div>
+            <button type="submit">Submit Quiz</button>
+        </div>
+    </form>
+</body>
+</html>
