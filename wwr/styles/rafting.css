@@ -384,6 +384,7 @@ section p {
 }
 
 iframe  {
+    border: 3px solid var(--nav-hover-link-color);
     width: 70%;
     border-radius: 1em;
 }

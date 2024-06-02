@@ -10,6 +10,12 @@ body {
     padding: 20px;
 }
 
+.fa {
+    display : inline-block;
+    font : normal normal normal 14px/1 FontAwesome;
+    font-size : inherit;
+    }
+
 :root {
     --primary-color: #011627;
     --secondary-color: #41ead4;
