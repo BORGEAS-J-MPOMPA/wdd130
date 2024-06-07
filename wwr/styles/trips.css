@@ -1,0 +1,32 @@
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.trip-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.trip-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.trips-table th, .trips {
+    width: auto;
+}
